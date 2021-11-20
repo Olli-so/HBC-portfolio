@@ -1,0 +1,121 @@
+@charset "utf-8";
+body {
+	width: 75%; 
+	font-family: tahoma, geneva, sans-serif;
+	background-color: #fff;
+	margin-top: 0px;
+	margin-right: auto; 
+	margin-bottom: 0px;
+	margin-left: auto;
+	font-size: 62.5%;
+	
+}
+figure img {
+	max-width: 100%;
+}
+p 	{
+	font-size: 1.2em;
+	padding-bottom: 0.5em;
+	
+}
+h1 {
+	font-size: 2.2em;
+	padding-bottom: 0.5em;
+	font-weight: bold;
+	padding-top: 0.5em;
+}
+h2 {
+	font-size: 1.8em;
+	padding-bottom: 0.5em;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.4em;
+	padding-bottom: 0.5em;
+	font-weight: bold;
+}
+#logo {
+	float: right;
+	width: 250px;
+}
+header {
+	padding: 1em;
+	margin-top: 2%;
+	margin-right: 2%;
+	margin-left: 2%;
+	border-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-color: #69013B;
+	font-size: 1.2em;
+	overflow: auto;
+	margin-bottom: 0px;
+	background-color: #69013B;
+	color: #FBDDF1;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#ops {
+	padding: 1em; 
+	margin-right: 2%;
+	margin-left: 2%;
+	border-width: thin;
+	border-style: solid;
+	border-top-color: #69013B;
+	border-bottom-color: #69013B;
+	border-right-color:#69013B;
+	border-left-color: #69013B;
+	font-size: 1.2em;
+	overflow: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+footer {
+	padding: 1em;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	border-width: thin;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-color: #69013B;
+	font-size: 1.2em;
+	font-style: italic;
+	overflow: auto;
+	margin-top: 0px;
+	border-top-style: none;
+	background-color: #69013B;
+	color: #FBDDF1;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.sisennys {
+	padding-left: 2em;
+	text-decoration: none;
+}
+a:link {
+	text-decoration: none; 
+	color: #333;
+}
+a:visited {
+	text-decoration: none;
+	color: #000; 
+}
+a:hover {
+	text-decoration: underline; color: #666;
+}
+a:active {
+	text-decoration: none; color: #000; 
+}
+#ops ol {
+    list-style-type: decimal;
+    padding-left: 3em;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+}
+#ops ol li {
+    padding-bottom: 0.5em;
+}
