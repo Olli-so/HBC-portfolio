@@ -1,0 +1,13 @@
+@charset "utf-8";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: orange;
+}
+img {
+	width: 350px;
+}
+h1 {
+	text-shadow: 2px 2px black;
+	color: blue;
+	padding-left: 2em;
+}

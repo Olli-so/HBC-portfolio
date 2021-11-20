@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fluid Grid</title>
+</head>
+<style type="text/css">
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        background-color: whitesmoke;
+        color: black;
+        margin: 0;
+        padding: 0;
+        font-size: 110%;
+    }
+
+    section h2 {
+        font-size: 1rem;
+    }
+
+    section {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .col-1 section {
+        margin-right: 1%;
+        width: 100%;
+        flex-grow: 1;
+        flex-basis: 0px;
+        margin: 5px;
+    }
+
+    .col-1 section:last-child {
+        margin-right: 0;
+    }
+
+    .col-3 section {
+        margin-right: 1%;
+        width: 32.666667%;
+        flex-grow: 1;
+        flex-basis: 0px;
+        margin-left: 5px;
+    }
+
+    .neljasosa {
+        width: 24.25%;
+        flex-basis: 0px;
+        flex-grow: 1;
+        padding-left: 5px;
+    }
+
+    figure {
+        flex-basis: 0px;
+        flex-grow: 1;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .puolet {
+        padding-left: 5px;
+        width: 49.5%;
+        flex-grow: 2;
+        flex-basis: 0px;
+    }
+
+    .col-3 section:last-child {
+        margin-right: 5px;
+    }
+</style>
+
+<body>
+    <article class="col-1">
+        <section>
+            <h1>Three equal columns</h1>
+            <h2>Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices,
+                tablets and below.</h2>
+        </section>
+    </article>
+
+    <article class="col-3">
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Qui sunt architecto temporibus saepe aspernatur cumque at ullam vero
+                laboriosam? Quaerat eum suscipit quisquam, error optio non sed in dignissimos minus!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate, sunt. Optio vel aliquam perferendis molestias, similique
+                consequatur sequi provident, eos, at corporis adipisci facere. Odit ut totam voluptates nemo voluptas.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+        </section>
+    </article>
+
+    <article class="col-1">
+        <section>
+            <h1>Three unequal columns</h1>
+            <h2>Get three columns starting at desktops and scaling to large desktops of various widths. Remember, grid
+                columns should add up to twelve for a single horizonal block. More than that and columns start stacking
+                no matter the viewpoint</h2>
+        </section>
+    </article>
+
+    <article class="col-4">
+
+        <section class="neljasosa">
+            <figure>
+    <img src="images/skaalautuva-kuva.png" />          
+			</figure>
+        </section>
+
+        <section class="puolet">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+
+        <section class="neljasosa">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate, sunt. Optio vel aliquam perferendis molestias, similique
+                consequatur sequi provident, eos, at corporis adipisci facere. Odit ut totam voluptates nemo voluptas.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+        </section>
+    </article>
+
+    <article class="col-1">
+        <section>
+            <h1>Two columns</h1>
+            <h2>Get two colunms at desktop and scaling to large desktops.</h2>
+        </section>
+    </article>
+
+    <article class="col-4">
+
+        <section class="puolet">
+            <figure>
+                <img src="images/skaalautuva-kuva.png" />
+            </figure>
+        </section>
+
+        <section class="neljasosa">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+    </article>
+
+    <article class="col-1">
+        <section>
+            <h1>Full width, single column</h1>
+            <h2>No Grid classes ncessary for full-width elements.</h2>
+        </section>
+    </article>
+
+    <article class="col-3">
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+    </article>
+
+    <article class="col-1">
+        <section>
+            <h1>Two columns with two nested columns</h1>
+            <h2>Get two colunms at desktop and scaling to large desktops.</h2>
+        </section>
+    </article>
+
+    <article class="col-4">
+        <section class="puolet">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+            <article class="col-3">
+                <section>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                        consequaturmagni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                        cupiditate
+                        nesciun itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit
+                        neque iste
+                        officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                        consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                        cupiditate
+                        nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit
+                        neque iste
+                        officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor
+                        sit
+                        amet, consectetur adipisicing elit. Qui sunt architecto temporibus saepe aspernatur cumque at
+                        ullam
+                        vero laboriosam? Quaerat eum suscipit quisquam, error optio non sed in dignissimos minus!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                        consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                        cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                        suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas
+                        delectus.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                        esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore
+                        quas
+                        doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati
+                        fuga
+                        provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+                </section>
+
+                <section>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                        consequatur
+                        magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate
+                        nesciunt
+                        itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste
+                        officia
+                        nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                        consequatur
+                        magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate
+                        nesciunt
+                        itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste
+                        officia
+                        nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit
+                        amet
+                        consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium
+                        eum in
+                        facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam
+                        eligendi!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                        consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                        cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                        suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas
+                        delectus.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                        esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore
+                        quas
+                        doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati
+                        fuga
+                        provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+                </section>
+            </article>
+        </section>
+
+        <section class="neljasosa">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+    </article>
+
+    <article class="col-1">
+        <section>
+            <h1>Mixed: Mobile and desktop</h1>
+            <h2>The Boostrap 3 grid has four tiers of classes: xs (phones), sm (tablets), and lg (large desktop). You
+                can use nearly any combinations of these classes to create more dynamic and flexible layouts.</h2>
+        </section>
+    </article>
+
+    <article class="col-4">
+        <section class="puolet">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+
+        <section class="neljasosa">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+    </article>
+
+
+    <article class="col-3">
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Qui sunt architecto temporibus saepe aspernatur cumque at ullam vero
+                laboriosam? Quaerat eum suscipit quisquam, error optio non sed in dignissimos minus!</p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+        </section>
+    </article>
+
+    <article class="col-1">
+        <section>
+            <h1>Mixed: Mobile, tablet and desktop.</h1>
+            <h2></h2>
+        </section>
+    </article>
+
+    <article class="col-4">
+        <section class="puolet">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+
+        <section class="neljasosa">
+            <figure>
+    <img src="images/skaalautuva-kuva.png" />          
+			</figure>
+        </section>
+    </article>
+
+
+    <article class="col-3">
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Qui sunt architecto temporibus saepe aspernatur cumque at ullam vero
+                laboriosam? Quaerat eum suscipit quisquam, error optio non sed in dignissimos minus!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+
+        <section>
+            <figure>
+    <img src="images/skaalautuva-kuva.png" />          
+			</figure>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+    </article>
+
+    <article class="col-1">
+        <section>
+            <h1>Column clearing</h1>
+            <h2>Clear floats at specific breakpoints to prevent awkward wrapping with uneven content.</h2>
+        </section>
+    </article>
+
+    <article class="col-3">
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Qui sunt architecto temporibus saepe aspernatur cumque at ullam vero
+                laboriosam? Quaerat eum suscipit quisquam, error optio non sed in dignissimos minus!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate, sunt. Optio vel aliquam perferendis molestias, similique
+                consequatur sequi provident, eos, at corporis adipisci facere. Odit ut totam voluptates nemo voluptas.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate, sunt. Optio vel aliquam perferendis molestias, similique
+                consequatur sequi provident, eos, at corporis adipisci facere. Odit ut totam voluptates nemo voluptas.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+        </section>
+    </article>
+
+    <article class="col-1">
+        <section>
+            <h1>Offset, push, and pull resets</h1>
+            <h2>Reset offset, pushes and pulls at specific breakpoints.</h2>
+        </section>
+    </article>
+
+    <article class="col-3">
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Qui sunt architecto temporibus saepe aspernatur cumque at ullam vero
+                laboriosam? Quaerat eum suscipit quisquam, error optio non sed in dignissimos minus!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Qui sunt architecto temporibus saepe aspernatur cumque at ullam vero
+                laboriosam? Quaerat eum suscipit quisquam, error optio non sed in dignissimos minus!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quisquam fugit aliquid, deserunt excepturi odit magni laudantium eum in
+                facilis, voluptas repellendus dicta, quidem veniam expedita doloribus modi quasi aliquam eligendi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam consequatur
+                magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque cupiditate nesciunt
+                itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut suscipit neque iste officia
+                nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Qui sunt architecto temporibus saepe aspernatur cumque at ullam vero
+                laboriosam? Quaerat eum suscipit quisquam, error optio non sed in dignissimos minus!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse explicabo, consequuntur magnam
+                consequatur magni adipisci! Exercitationem veniam assumenda aspernatur magni quibusdam eaque
+                cupiditate nesciunt itaque ad vel, repellat eum incidunt dolor possimus architecto culpa quas ut
+                suscipit neque iste officia nemo quos. Voluptatibus sunt minus iste quibusdam natus quas delectus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto sunt dolorem beatae
+                esse quod rem id asperiores in expedita voluptatum adipisci, modi fugiat sit vero aut dolore quas
+                doloremque eaque obcaecati. Totam dolor eos exercitationem commodi enim aliquam rerum obcaecati fuga
+                provident, ab possimus modi autem eaque pariatur repudiandae.</p>
+        </section>
+    </article>
+</body>
+
+</html>

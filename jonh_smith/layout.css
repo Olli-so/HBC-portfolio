@@ -1,0 +1,90 @@
+@charset "utf-8";
+header {
+	background-color: #B9C826;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	
+}
+footer {
+	background-color: #B9C826;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	clear: both
+}
+footer p {
+	padding: 10px;
+}
+nav ul li {
+	display: inline;
+	text-align: center;
+}
+nav a {
+	color: #000000;
+	padding-top: 7px;
+	padding-right: 14px;
+	padding-left: 14px;
+	padding-bottom: 7px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 2em;
+	
+}
+figure img {
+	max-width: 100%;
+
+}
+.active {
+	padding-right: 5px; 
+	padding-left: 5px;
+	padding-bottom: 8px;
+	padding-top: 13px;
+	background-color: #B9C826;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+nav ul {
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+nav {
+	text-align: center;
+}
+article section h1 {
+	padding: 15px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+body article {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+article section p {
+	padding-bottom: 10px;
+	font-size: 1em;
+	padding-left: 10px;
+}
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	max-width: 1250px;
+}
+	/* Tablet sääntö */
+@media screen and (min-width:426px) and (max-width:768px){
+	/* Nämä säännöt voimassa tablet näkymässä */
+	body {
+		color: indianred;
+	}
+}
+ 	/* Laptop säännöt */
+@media screen and (min-width:769px){
+	/* Nämä säännöt voimassa isoilla näytöillä */
+	.left {
+		width: 50%;
+    	float: left;
+	}
+	.right {
+		width: 50%;
+		float: right;
+	}
+
+}

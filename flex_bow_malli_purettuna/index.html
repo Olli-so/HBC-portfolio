@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>index</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+ 		 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	<style>
+		.parent {
+			display:flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+		}
+		.parent > *{
+			flex-basis: 0px;
+			flex-grow: 1;
+			order: 2;
+		}
+		.parent .color-blue {
+			background-color: blue;
+		}
+		.parent .color-red {
+			background-color: red;
+		}
+		.parent .color-green {
+			background-color: green;
+		}
+		.two .color-blue {
+			flex-grow: 2;
+		}
+		.three .color-green {
+			order: 1;
+		}
+		.three .color-blue {
+			flex-grow: 2;
+		}
+
+		p {
+			margin-top: 5px;
+			margin-bottom: 10px;
+			padding: 1em;
+		}
+	</style>
+</head>
+<body>
+	<h1>First</h1>
+	<article class="parent one">
+		<p class="color-red"></p>
+		<p class="color-blue"></p>
+		<p class="color-green"></p>
+	</article>
+	<h1>Second</h1>
+	<article class="parent two">
+		<p class="color-red"></p>
+		<p class="color-blue"></p>
+		<p class="color-green"></p>
+	</article>
+	<h1>Third</h1>
+	<article class="parent three">
+		<p class="color-red"></p>
+		<p class="color-blue"></p>
+		<p class="color-green"></p>
+	</article>
+</body>
+</html>

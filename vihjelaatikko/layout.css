@@ -1,0 +1,20 @@
+@charset "utf-8";
+#container1 li:nth-child(odd) {
+	background-color: #48FF4B;
+	border-bottom-right-radius: 10px;
+}
+#container2 li:nth-child(even) {
+	background-color: #48FF4B;
+	border-bottom-right-radius: 10px;
+}
+#container1 ol {
+	float: left;
+	width: 40%;
+}
+#container2 {
+	overflow: hidden;
+}
+li {
+	padding: 10px;
+	margin: 5px;
+}

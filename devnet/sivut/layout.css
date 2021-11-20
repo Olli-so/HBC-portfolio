@@ -1,0 +1,28 @@
+@charset "utf-8";
+button {
+    background-color:rgb(135, 135, 233);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+a {
+    color: whitesmoke;
+    padding: 5px;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: cornflowerblue;
+    color: rgb(98, 94, 94);
+}
+button:hover {
+    background-color: turquoise;
+}
+section {
+    background-color: lightgray;
+    padding: 15px;
+    width: 35%;
+    border-radius: 10px;
+}

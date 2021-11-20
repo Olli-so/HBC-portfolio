@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muuta fonttia painamalla nappia</title>
+    <link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <section>
+        <h1>Muuta fonttikokoa JavaScriptillä</h1>
+        <p>HUOM! Tee kaikki muutokset JavaScriptin avulla. Tässä esimerkissä on käytetty fonttia "Josefin Sans".</p>
+        <p>Listan fonttikokoa muutetaan alla olevaa painonappia painamalla. Määrittele ensin bodyn fonttikoko 10px. Muuta sen jälkeen fontin kokoa käyttäen suhteellista yksikköä em em. Listan oletusfonttikoko on 16px.</p>
+        <h2>Tämän listan fonttikoko pitää muuttua nappia painamalla</h2>
+        <ol id="font">
+            <li>Ensimmäinen napin painallus muuttaa fonttityypiksi "Monospace" </li>
+            <li>Seuraava napin painallus muuttaa fonttityypiksi "Sans-Serif" </li>
+            <li>Seuraava napin painallus muuttaa fonttityypiksi "Courier" </li>
+            <li>Seuraava napin painallus muuttaa fonttityypiksi "Times" </li>
+            <li>Seuraava napin painallus muuttaa fonttityypiksi "Fantasy" </li>
+        </ol>
+        <button onclick="changeFont()">Fontin koko</button>
+    </section>
+<script>
+    var lista = document.getElementById('font')
+lista.style.fontFamily = "sans-serif";
+function changeFont(multiplier) {
+
+if (lista.style.fontFamily == "sans-serif") {
+
+lista.style.fontFamily = "courier";
+}
+else if (lista.style.fontFamily == "courier")
+{
+lista.style.fontFamily = "times";
+}
+else if (lista.style.fontFamily == "times")
+{
+lista.style.fontFamily = "fantasy";
+}
+else if (lista.style.fontFamily == "fantasy")
+{
+lista.style.fontFamily = "monospace";
+}
+else if (lista.style.fontFamily == "monospace")
+{
+lista.style.fontFamily = "sans-serif";
+}
+}
+</script>
+</body>
+</html>

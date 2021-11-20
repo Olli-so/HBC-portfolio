@@ -1,0 +1,52 @@
+@charset "utf-8";
+body {
+	font-family: "Comic Sans MS";
+	font-size: small;
+}
+.box {
+	width: 273px;
+	border: 1px solid #c6a765;
+	background-color: #faf7f1;
+	background-size: 10px;
+	margin: 1em;
+	float: left;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.box h3 {
+	padding-top: 6px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	font-size: 130%;
+	color: #333;
+	background-color: #D5C6A8;
+	overflow: hidden;
+}
+.container2 p {
+	padding: 10px;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+ul {
+	padding: 10px;
+}
+li {
+	margin-bottom: 5px;
+}
+#container {
+	background-color: #999999;
+	overflow: auto;
+	clear: both;
+	border-bottom-style: dashed;
+	border-bottom-width: 10px;
+	border-color: #CCCCCC;
+}
+.container2 {
+	
+	background-color: #CCCCCC;
+	clear: both; 
+	overflow: auto;
+}

@@ -1,0 +1,88 @@
+@charset "utf-8";
+body {
+	display: flex;
+	font-size: 62.5%;
+}
+body > * {
+	flex-grow: 1;
+	flex-basis: 0px;
+}
+body article {
+	flex-grow: 2;
+}
+article {
+	padding: 0em 1em 0em 1em;
+}
+p {
+	padding-bottom: 1em;
+}
+.arrow_left {
+	background-image: url(images/arrowmask_left.png);
+	background-repeat: no-repeat;
+	background-position: 0px 50%;
+	background-color:#693;
+	float: right;
+	margin-bottom: 10px;
+	color: white;
+}
+.arrow_right {
+	background-image: url(images/arrowmask_right.png);
+	background-repeat: no-repeat;
+	background-position: right 50%;
+	background-color:#FF0004;
+	float: left;
+	margin-bottom: 10px;
+	color: white;
+}
+.green_arrows {
+	float: left;
+}
+.red_arrows {
+	float: right;
+}
+
+.green_arrows h1 {
+	font-size: 3em;
+	padding: 20px 10px 20px 50px;
+}
+.green_arrows h2 {
+	font-size:2.7em;
+	padding: 20px 10px 20px 50px;
+}
+.green_arrows h3 {
+	font-size:2.4em;
+	padding: 20px 10px 20px 50px;
+}
+.green_arrows h4 {
+	font-size:2.1em;
+	padding: 20px 10px 20px 50px;
+}
+.red_arrows h1 {
+	font-size: 3em;
+	padding: 20px 50px 20px 10px;
+}
+.red_arrows h2 {
+	font-size:2.7em;
+	padding: 20px 50px 20px 10px;
+}
+.red_arrows h3 {
+	font-size:2.4em;
+	padding: 20px 50px 20px 10px;
+}
+.red_arrows h4 {
+	font-size:2.1em;
+	padding: 20px 50px 20px 10px;
+}
+
+
+@media screen and (max-width:426px) and (min-width:1px){
+	.arrow_left {
+		display: none;	
+	}
+	.arrow_right {
+		display: none;
+	}
+	body {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+@keyframes offset {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+.stick, .outside, .inside-r, .inside-l, .drop {
+	animation: offset 2s linear forwards;
+}
+.stick {
+	stroke-dasharray: 1800;
+	stroke-dashoffset: 1800;
+	animation-delay: 1.75s;
+}
+.outside {
+	stroke-dasharray: 2300;
+	stroke-dashoffset: 2300;
+}
+.inside-l {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation-delay: 1s;
+}
+.inside-r {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	
+}
+.drop {
+	stroke-dasharray: 200;
+	stroke-dashoffset: 200;
+	animation-delay: 2.5s;
+}
+div {
+	width: 25%;
+	margin: 0% 30% 0% 30%;
+}

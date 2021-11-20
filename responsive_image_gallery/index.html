@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!--[if lt IE 9]>
+   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<title>index</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body class="no-touch">
+<div class="wrap">
+    
+  <!-- Define all of the tiles: -->
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/1.jpg" alt="Butterfly"/>
+	<div class="titleBox">Butterfly</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/2.jpg" alt="An old greenhouse"/>
+	<div class="titleBox">An old greenhouse</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/3.jpg" alt="Purple wildflowers"/>
+	<div class="titleBox">Purple wildflowers</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/4.jpg" alt="A birdfeeder"/>
+<div class="titleBox">A birdfeeder</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/5.jpg" alt="Crocus close-up"/>
+<div class="titleBox">Crocus close-up</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/6.jpg" alt="The garden shop"/>
+<div class="titleBox">The garden shop</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/7.jpg" alt="Spring daffodils"/>
+<div class="titleBox">Spring daffodils</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/8.jpg" alt="Iris along the path"/>
+<div class="titleBox">Iris along the path</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/9.jpg" alt="The garden blueprint"/>
+<div class="titleBox">The garden blueprint</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/10.jpg" alt="The patio"/>
+<div class="titleBox">The patio</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/11.jpg" alt="Bumble bee collecting nectar"/>
+<div class="titleBox">Bumble bee collecting nectar</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="image/12.jpg" alt="Winding garden path"/>
+<div class="titleBox">Winding garden path</div>
+    </div>
+  </div>
+  
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+$(function(){
+   // See if this is a touch device
+   if ('ontouchstart' in window)
+   {
+      // Set the correct [touchscreen] body class
+      $('body').removeClass('no-touch').addClass('touch');
+     
+      // Add the touch toggle to show text when tapped
+      $('div.boxInner img').click(function(){
+         $(this).closest('.boxInner').toggleClass('touchFocus');
+      });
+   }
+});
+</script>
+</body>
+</html>

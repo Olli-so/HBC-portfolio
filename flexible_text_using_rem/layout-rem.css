@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-size: 62.5%;
+}
+h1 {
+	font-size: 2.4rem;
+}
+h2 {
+	font-size: 1.8em;
+	padding: 0.5em 0 0.5em 0;
+}
+p {
+	font-size: 1.2rem;
+}
+#sidebar {
+	font-size: 1em;
+	background-color: #C2C3C5;
+	float: right;
+	padding: 1em;
+	width: 33%;
+	margin-bottom: 1%;
+	height: 25em;
+}
+p abbr {
+	font-size: 2em;
+}
+header {
+	background-color: #818181;
+	margin-bottom: 1%;
+	padding: 1em;
+	color: white;
+}
+article {
+	color: white;
+	background-color: #A2A2A2;
+	width: 66%;
+	float: left;
+	padding: 1em;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	height: 25em;
+}
+footer {
+	background-color: #D3D3D3;
+	padding: 1em;
+	clear: both;
+	font-size: 1.5em;
+}
+* {
+  box-sizing: border-box;
+}

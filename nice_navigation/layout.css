@@ -1,0 +1,64 @@
+@charset "utf-8";
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 62.5%;	
+	background-image:url(images/shell-bg.jpg);
+	background-repeat:no-repeat;
+	background-color: black;
+	background-position: top left;
+	background-attachment: fixed;
+}
+nav {
+	font-size: 1em;
+	height: 700px;
+	width: 160px;
+	margin-top: 50px;
+	float: left;
+}
+article {
+	font-size: 13px;
+	color: white;
+	border: #FFCC99 1px solid; 
+	background-color: rgba(116,140,164,0.70);
+	margin: 26px 26px 26px 161px 
+	
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding: 5px 10px;
+	margin-bottom: 2px;
+	color: #FFFFCC;
+	background-color: rgba(69,69,69,0.70);
+	font-size: 1.5em;
+}
+nav a:hover {
+	color: #441111;
+	background-color: rgba(245,245,245,0.70);
+}
+.ostikko {
+	text-align: right;
+	padding-left: 2em;
+	font-size: 2.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.3em;
+	padding-right: 0.3em;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #AACCEE;
+	letter-spacing: 5px;
+}
+article p  {
+	margin-left: 0px;
+	padding-left: 10px;
+	
+}
+article h2 {
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 1.5em;
+}

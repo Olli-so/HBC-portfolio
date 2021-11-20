@@ -1,0 +1,173 @@
+@charset "utf-8";
+#special {
+	margin: 0% 10% 0% 10%;
+	color: white;
+	background-color: #647C80;
+	padding: 0.7em;
+	border-bottom-width: 0.2em;
+	background-image: url(images/special-bg.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	max-width: 940px;
+}
+footer p {
+	color: gray;
+
+	padding: 1.5em 0em 1em 0em;
+}
+footer {
+	text-align: center;
+}
+header {
+	border-bottom: solid 1px gray;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+.nav_teksti {
+	font-size: 0.9em;
+	color: gray;
+}
+.nav {
+	padding-top: 1.1em;
+}
+.main_nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.sidebar_nav1 {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+.artikkeli h2 {
+	padding: 1em 0em 0.5em 0em;
+}
+.sidebar_nav2 {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+#sidebar h3 {
+	font-size: 1.3em;
+	padding: 0.5em 0em 0.5em 0em;
+}
+.sidebar_nav1 nav ul li {
+	width: 100%;
+	margin-right: 1em;
+	
+}
+.sidebar_nav2 nav ul li {
+	width: 100%;
+	margin-right: 1em;
+	
+}
+.sidebar_nav1 nav {
+	flex-grow: 1;
+	flex-basis: 50%;
+	padding-bottom: 2em;
+	border-bottom: solid 1px lightgray;
+}
+.sidebar_nav2 nav {
+	flex-grow: 1;
+	flex-basis: 50%;
+	padding-bottom: 2em;
+	border-bottom: solid 1px lightgray;
+}
+.logo {
+	padding: 0.4em;
+}
+.main_nav > * {
+	flex-basis: 0px;
+	flex-grow: 1;
+}
+figure {
+	width: 100%;
+	display: block;
+}
+.parent	{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.callout {
+	background-color: #F9E9C2;
+	border-radius: 15px;
+	padding: 1.5em;
+	text-align: center;
+}
+#wrapper {
+	max-width: 960px;
+	margin: 0% 10% 0% 10%;
+	background-image: url(images/grunge.png);
+	background-repeat: no-repeat;
+	padding: 0em 0.4em 0em 0.4em;
+}
+#main {
+	width: 60%;
+	box-sizing: border-box;
+}
+#sidebar {
+	width: 40%;
+	box-sizing: border-box;
+	margin-left: 1.5em;
+}
+
+@media screen and (max-width:550px){
+	#sidebar {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+	#main {
+		width: 100%;
+	}
+	.logo_full {
+		display: none;
+	}
+	.nav_teksti {
+		display: none;
+	}
+	.main_nav ul li {
+		text-align: center;
+	}
+	header {
+		padding-bottom: 1em;
+		border-bottom: solid 1px gray;
+		margin-bottom: 1em;
+	}
+	.logo_mobile {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width:550px) and (max-width: 800px){
+	.logo_mobile {
+		display: none;
+	}
+	#sidebar {
+		display: none;
+	}
+	.nav_teksti {
+		display: none;
+	}
+	#main {
+		width: 100%;
+	}
+	.callout1 {
+	margin: 1em;
+	background-color: #F9E9C2;
+	border-radius: 15px;
+	padding: 1.5em;
+	text-align: center;
+	}
+}
+@media screen and (min-width:800px){
+	.callout1 {
+		display: none;
+	}
+	.logo_mobile {
+		display: none;
+	}
+}

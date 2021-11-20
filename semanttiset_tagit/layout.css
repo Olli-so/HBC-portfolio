@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+	background-color: #DE1527;
+}
+nav {
+	background-color: #F28E30;
+}
+
+section {
+	background-color: #FEBF15;
+	float: left;
+	width: 50%;
+	padding-bottom: 1000px;
+    margin-bottom: -1000px;
+	
+}
+#kappale1 {
+	background-color: #78C044;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+#kappale2 {
+	background-color: #78C044;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+aside {
+	background-color: #086FB2;
+	float: right;
+	width: 50%;
+	margin-bottom: -1000px;
+	padding-bottom: 1000px;
+}
+footer {
+	
+	background-color: #91298A;
+	clear: both;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+p {
+	padding: 10px;
+	color: white;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	
+	
+}
+.container {
+    overflow: hidden;
+}

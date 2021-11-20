@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Muuta fontin koko js</title>
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <section>
+        <h1>Muuta fonttikokoa JavaScriptillä</h1>
+        <p>HUOM! Tee kaikki muutokset JavaScriptin avulla. Tässä esimerkissä on käytetty fonttia "Josefin Sans".</p>
+        <p>Listan fonttikokoa muutetaan alla olevaa painonappia painamalla. Määrittele ensin bodyn fonttikoko 10px. Muuta sen jälkeen fontin kokoa käyttäen suhteellista yksikköä em em. Listan oletusfonttikoko on 16px.</p>
+        <h2>Tämän listan fonttikoko pitää muuttua nappia painamalla</h2>
+        <ol id="size">
+            <li>Ensimmäisen napin painallus muuttaa fonttikoon 20px</li>
+            <li>Seuraava napin painallus muuttaa fonttikoon 24px</li>
+            <li>Seuraava napin painallus muuttaa fonttikoon 28px</li>
+            <li>Seuraava napin painallus muuttaa fonttikoon 32px</li>
+            <li>Seuraava napin painallus muuttaa fonttikoon 20px</li>
+        </ol>
+        <button onclick="changeSize()">Fontin koko</button>
+    </section>
+
+<script>
+    var lista = document.getElementById("size");
+    lista.style.fontSize = "16px";
+function changeSize(multiplier) {
+    
+ if (lista.style.fontSize == "16px") {
+
+    lista.style.fontSize = "20px";
+}
+else if (lista.style.fontSize == "20px")
+{
+    lista.style.fontSize = "24px";
+}
+else if (lista.style.fontSize == "24px")
+{
+    lista.style.fontSize = "28px";
+}
+else if (lista.style.fontSize == "28px")
+{
+    lista.style.fontSize = "32px";
+}
+else if (lista.style.fontSize == "32px")
+{
+    lista.style.fontSize = "20px";
+}
+}
+
+</script>
+</body>
+</html>

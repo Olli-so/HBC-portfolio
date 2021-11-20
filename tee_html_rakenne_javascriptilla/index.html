@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>html javascriptillä</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script>
+/*Header ja sisällön tuonti*/
+var header = document.createElement("header");
+var h1 = document.createElement("h1");
+var para = document.createElement("p");
+header.appendChild(h1);
+header.appendChild(para);
+/*------------------------*/
+/*Footer ja sisältön tuonti*/
+var footer = document.createElement("footer");
+var para3 = document.createElement("p");
+footer.appendChild(para3)
+/*------------------------*/
+/*Footerin sisältö*/
+var para3text = document.createTextNode("Olli Söderberg © 2019")
+para3.appendChild(para3text)
+/*------------------------*/
+/*Section ja sisällön tuonti*/
+var section = document.createElement("section");
+var para2 = document.createElement("p");
+var figure = document.createElement("figure")
+section.appendChild(para2);
+section.appendChild(figure);
+/*------------------------*/
+/*Headerin sisöltä*/
+var h1text = document.createTextNode("Tämä on artikkelin otsikko");
+var paratext = document.createTextNode("Ensimmäinen kappale, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae hic ea repellendus ipsum suscipit adipisci eum nulla molestiae facilis, sunt?");
+h1.appendChild(h1text);
+para.appendChild(paratext);
+/*------------------------*/
+/*Id:n ja classin anto*/
+header.setAttribute("class", "ylatunniste");
+section.setAttribute("id", "rinnakkain");
+figure.setAttribute("id", "kuvanpaikka");
+/*--------------------------*/
+/*Sectionin sisältö*/
+var para2text = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae hic ea repellendus ipsum suscipit adipisci eum nulla molestiae facilis, sunt?");
+var img = document.createElement("img");
+img.src = "images/js.gif";
+figure.appendChild(img);
+para2.appendChild(para2text);
+/*--------------------------*/
+/*Section, header ja footerin tuonti*/
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(header);
+body.appendChild(section);
+body.appendChild(footer);
+/*--------------------------*/
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>profit margin calculator</title>
+</head>
+
+<body>
+	<p style="font-family: arial:color:black:font-size:20px">
+	<strong>Hintalaskuri. Kuinka hinnoittelet tuotteesi</strong></p>
+	<p style="font-family:arial;color:black;font-size:12px;">
+		<label>Pakenttihinta (ilman ALV): &#163; 
+		<input id="CasePrice" data-bind="value; CasePrice" value="100"/> </label> <br /> <br />
+		<label> Montako tuotetta per paketti?: &#163;
+		<input id="UnitsCase" data-bind="value: UnitsCase" value="12"/> </label> <br /> <br />
+		
+		---------------
+		
+		 <br /> 
+		<label>Paljonko voittoa haluat % per yksikkö?:
+		<input id="percGP" data-bind="value: percGP" value="30" /> %</label>
+		<p style="font-family: arial;color: red;font-size:12px;">
+		<label>Yksikön Hinta: &#163; 
+		<input id="costPrice" data-bind="value: costPrice" value"" readonly /> </label> </p>
+	
+		---------------
+	
+		<p style="font-family: arial;color:black;font-size:12px;">
+		<label>Paketin myyntihinta (ilman ALV): &#163; 
+		<input id="sCase" data-bind="value: sellCase" value="" readonly /></label> <br /> <br />
+		<label>Yksikön myyntihinta (ilman ALV): &#163; 
+		<input id="sellPricexVAT" data-bind="value: sellPricexVAT" value="" readonly /> </label> <br /> <br />
+		<label>Yksikön myyntihinta (sis. ALV): &#163; 
+		<input id="sellPriceVAT" data-bind="value: sellPriceVAT" value="" readonly /> </label> </p>
+	</p>
+		<p style="font-family:arial;color:green;font-size:12px;">
+		<label>Voittoa per yksikkö: &#163;
+		<input id="cashMargin" data-bind="value: cashMargin" value="" readonly /> </label> <br />
+	</p>
+	
+	<br />
+	<button onclick="calcGProfit()">Laske Tuottavuusprosentti</button>
+	
+	<script type="text/javascript">
+		function calcGProfit() {
+			var caseprice = document.getElementById('CasePrice').value * 1;
+			var unitsPerCase = document.getElementById('UnitsCase').value * 1;
+			var percentProfit = document.getElementById('percGP').value / 100;
+			
+			costPrice = caseprice / unitsPerCase;
+			document.getElementById('costPrice').value = costPrice.toFixed(2);
+			
+			var sellCase = costPrice / (1 - percentProfit) * unitsPerCase;
+			document.getElementById('sCase').value = sellCase.toFixed(2);
+			
+			var sell$ = (sellCase / unitsPerCase);
+			document.getElementById('sellPricexVAT').value = sell$.toFixed(2);
+			
+			var sell$$ = sell$ * (1 + 0.20);
+			document.getElementById('sellPriceVAT').value = sell$$.toFixed(2);
+			
+			var Cmargin = sell$ - costPrice;
+			document.getElementById('cashMargin').value = Cmargin.toFixed(2);
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>index</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+	<style>
+		#cube {
+			background: #FF0000;
+			width: 100px;
+			height: 100px;
+			-webkit-animation: mun_oma 10s;
+			animation: mun_oma 10s;
+		}
+		@-webkit-keyframes mun_oma {
+			0% {background-color: red;}
+			25% {background-color: blue;}
+			50% {background-color: yellow;}
+			75% {background-color: green;}
+			100% {background-color: red;}
+		}
+		@keyframes mun_oma {
+			0% {background-color: red;}
+			25% {background-color: blue;}
+			50% {background-color: yellow;}
+			75% {background-color: green;}
+			100% {background-color: red;}
+		}
+	</style>
+</head>
+
+<body>
+	<p><b>Note: </b>When an animation is finished, it changes back it its original style.</p>
+	
+<section id="cube"></section>
+</body>
+</html>

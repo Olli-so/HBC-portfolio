@@ -1,0 +1,82 @@
+@charset "utf-8";
+.container {
+	width: 400px;
+	box-sizing: border-box;
+	border: 1px black solid;
+	background-color: gainsboro;
+	background-image: linear-gradient(to bottom, right, gainsboro, white);
+	padding: 1em;
+	border-radius: 15px;
+	margin: 10px;
+}
+body {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+ .container .heading {
+	float: right;
+	width: 70%;
+	box-sizing: border-box;
+}
+.container .image {
+	float: left;
+	width: 30%;
+	box-sizing: border-box;
+}
+.container .text {
+	float: left;
+	width: 70%;
+	box-sizing: border-box;
+}
+.container .image img {
+	padding: 5px;
+	border: 1px solid lightgray;
+	background-color: white;
+    box-shadow: 3px 3px 3px 3px #666;
+	max-width: 100%;
+}
+.container .heading h1 {
+	font-size: 2em;
+	font-family: comic "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	padding-bottom: 10px;
+}
+.container .text p {
+	padding-bottom: 10px;
+}
+.reverse .heading {
+	float: left;
+	
+}
+.reverse .text {
+	float: right;
+	
+}
+.reverse .image {
+	float: right;
+	
+}
+.reverse .image img {
+	float: right;
+}
+
+@media screen and (max-width:425px){
+	body {
+		margin: 0px;
+	}
+	.container {
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-left: 0px;
+		min-width: 320px;
+		padding: 10px;
+	}
+}
